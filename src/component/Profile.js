@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const API_ROOT =
-  process.env.REACT_APP_API_ROOT || "http://localhost:5000/api/userapi";
+  process.env.REACT_APP_API_ROOT || "https://sen-9-box-cricket-backend-production.up.railway.app/api/userapi";
 const API = API_ROOT.replace(/\/+$/, "");
 
 /* ---------- helpers ---------- */

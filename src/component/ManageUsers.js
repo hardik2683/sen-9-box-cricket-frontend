@@ -13,8 +13,8 @@ const ManageUsers = () => {
   const [imageFile, setImageFile] = useState(null);
 
   const recordsPerPage = 2;
-  const API_URL = `http://localhost:5000/api/registeruserapi/getRegisterUser`;
-  const UPDATE_URL = `http://localhost:5000/api/registeruserapi/updateRegisterUser`; // Update API URL
+  const API_URL = `https://sen-9-box-cricket-backend-production.up.railway.app/api/registeruserapi/getRegisterUser`;
+  const UPDATE_URL = `https://sen-9-box-cricket-backend-production.up.railway.app/api/registeruserapi/updateRegisterUser`; // Update API URL
 
   useEffect(() => {
     const fetchData = async () => {

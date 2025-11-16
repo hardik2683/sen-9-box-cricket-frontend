@@ -16,7 +16,7 @@ const imageList = [
 
 const API_BASE =
   process.env.REACT_APP_API_BASE_URL_REG?.replace(/\/+$/, "") ||
-  "http://localhost:5000/api";
+  "https://sen-9-box-cricket-backend-production.up.railway.app/api";
 
 const generateUserId = () => "user_" + Date.now();
 

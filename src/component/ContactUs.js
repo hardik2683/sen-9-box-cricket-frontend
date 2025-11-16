@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 // Use one base, then append the path used by the backend router mounting:
 // server should mount like: app.use("/api/userapi", require("./routes/userApi"));
-const API_ROOT = process.env.REACT_APP_API_ROOT || "http://localhost:5000/api/userapi";
+const API_ROOT = process.env.REACT_APP_API_ROOT || "https://sen-9-box-cricket-backend-production.up.railway.app/api/userapi";
 
 const steps = ["Contact", "Location", "Investment", "Review"];
 

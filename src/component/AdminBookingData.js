@@ -47,7 +47,7 @@ const AdminBookingData = () => {
   const fetchAllData = async () => {
     try {
       const [bookingRes, slotRes, areaRes, userRes] = await Promise.all([
-        axios.get("http://localhost:5000/api/userapi/viewBooking"),
+        axios.get("https://sen-9-box-cricket-backend-production.up.railway.app/api/userapi/viewBooking"),
         axios.get(`${process.env.REACT_APP_API_BASE_URL}/viewAreaWiseSlot`),
         axios.get(`${process.env.REACT_APP_API_BASE_URL}/viewArea`),
         axios.get(`${process.env.REACT_APP_API_BASE_URL}/viewUser`),
@@ -83,7 +83,7 @@ const AdminBookingData = () => {
     if (!selectedBooking?._id) return;
 
     await axios.delete(
-      `http://localhost:5000/api/userapi/admin-cancel-booking/${selectedBooking._id}`,
+      `https://sen-9-box-cricket-backend-production.up.railway.app/api/userapi/admin-cancel-booking/${selectedBooking._id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
